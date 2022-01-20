@@ -1,0 +1,1 @@
+O total foi de AOA {total}, os impostos foram de AOA {taxes}. Obrigado pelo seu pedido!
