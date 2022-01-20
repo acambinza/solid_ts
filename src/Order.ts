@@ -22,13 +22,8 @@ export default class Order {
     getTaxes() {
         let taxes  = 0;
         for(const item of this.items){
-            if(item.category === "Frescos")
-                taxes += (item.price * 10) / 100
-            
-            if(item.category === "Conservas")
-                taxes += (item.price * 20) / 100
+            taxes += (item.calcTaxes())
         }
-
         return taxes;
     }
 
